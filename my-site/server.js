@@ -45,7 +45,7 @@ app.post('/login', (req, res) => {
         return res.send('Invalid login.');
       }
       req.session.userId = user.id;
-      res.redirect('/index.html'); // ⬅ redirect to main page after login
+      res.redirect('/index.html'); // ⬅ redirect to main page after logi
     });
   });
   
