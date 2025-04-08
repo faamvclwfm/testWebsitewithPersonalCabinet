@@ -20,6 +20,21 @@ body {
     height: auto;
     padding: 50px;
 }
+.allTestSection button{
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 30px;
+    background-color: #9a92ed;
+    color: white;
+    cursor: pointer;
+    box-sizing: border-box;
+    width: 150px;
+    margin: 0 auto;
+    text-decoration-line: none;
+    margin-bottom: 10px;
+    float: right;
+}
 .test{
     display: flex;
     justify-content: space-between;
