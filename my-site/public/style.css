@@ -116,3 +116,31 @@ body {
 input[type='radio']{
   margin-bottom: 21px;
 }
+.loginButton{
+  padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #9a92ed;
+    color: white;
+    cursor: pointer;
+    box-sizing: border-box;
+    width: 150px;
+    margin: 0 auto;
+    text-decoration-line: none;
+    margin-bottom: 10px;
+}
+.signUpButton{
+  padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #edd292;
+    color: white;
+    cursor: pointer;
+    box-sizing: border-box;
+    width: 150px;
+    margin: 0 auto;
+    text-decoration-line: none;
+    margin-bottom: 10px;
+}
