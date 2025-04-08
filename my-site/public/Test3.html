@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Інтерактивний Тест</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a href="alltests.html" class="allTests">До усіх тестів</a>
+  <div class="mainSection">
+
+    <div class="nav" id="taskNav"></div>
+    
+    <div id="questions">
+      <div class="question active">
+        <p>1. a¹⁰  ⋅ a⁸ : a² =</p>
+        <input type="radio" id="q1a1" name="q1" value="0"><label for="q1a1">a<sup>40</sup></label> <br>
+        <input type="radio" id="q1a2" name="q1" value="0"><label for="q1a3">a<sup>9</sup></label> <br>
+        <input type="radio" id="q1a3" name="q1" value="1"><label for="q1a3">a<sup>16</sup></label> <br>
+        <input type="radio" id="q1a4" name="q1" value="0"><label for="q1a1">a<sup>78</sup></label> <br>
+        <input type="radio" id="q1a5" name="q1" value="0"><label for="q1a3">a<sup>4</sup></label> <br>
+      </div>
+  
+      <div class="question">
+        <p>2. Якщо a ≠ 0, то (a⁶)⁸ / a⁴ =</p>
+        <input type="radio" id="q2a1" name="q2" value="1"><label for="q2a1">a<sup>44</sup></label> <br>
+        <input type="radio" id="q2a2" name="q2" value="0"><label for="q2a2">a<sup>10</sup></lab4l> <br>
+        <input type="radio" id="q2a3" name="q2" value="0"><label for="q2a3">a<sup>35</sup></label> <br>
+        <input type="radio" id="q2a4" name="q2" value="0"><label for="q2a1">a<sup>12</sup></label> <br>
+        <input type="radio" id="q2a5" name="q2" value="0"><label for="q2a2">a<sup>8</sup></label> <br>
+      </div>
+  
+      <div class="question">
+        <p>3. (a⁴b⁵)⁶ =</p>
+        <input type="radio" id="q3a1" name="q3" value="0"><label for="q3a1">a<sup>4</sup>b<sup>11</sup></label> <br>
+        <input type="radio" id="q3a2" name="q3" value="1"><label for="q3a2">a<sup>24</sup>b<sup>30</sup></label> <br>
+        <input type="radio" id="q3a3" name="q3" value="0"><label for="q3a3">a<sup>10</sup>b<sup>11</sup></label> <br>
+        <input type="radio" id="q3a4" name="q3" value="0"><label for="q3a1">a<sup>4</sup>b<sup>30</sup></label> <br>
+        <input type="radio" id="q3a5" name="q3" value="0"><label for="q3a2">a<sup>24</sup>b<sup>30</sup></label> <br>
+      </div>
+      <div class="question">
+        <p>4. Обчисліть 4⁶ ⋅ 2¹⁶ / 8⁹</p>
+        <input type="radio" id="q4a1" name="q4" value="0"><label for="q3a1">1</label> <br>
+        <input type="radio" id="q4a2" name="q4" value="1"><label for="q3a2">2</label> <br>
+        <input type="radio" id="q4a3" name="q4" value="0"><label for="q3a3">4</label> <br>
+        <input type="radio" id="q4a4" name="q4" value="0"><label for="q3a1">8</label> <br>
+        <input type="radio" id="q4a5" name="q4" value="0"><label for="q3a2">16</label> <br>
+      </div>
+      <div class="question">
+        <p>5. Обчисліть (0,5)¹⁸ ⋅ 2¹⁸</p>
+        <input type="radio" id="q5a1" name="q5" value="0"><label for="q2a1">1/4</label> <br>
+        <input type="radio" id="q5a2" name="q5" value="0"><label for="q2a2">1/2</lab4l> <br>
+        <input type="radio" id="q5a3" name="q5" value="1"><label for="q2a3">1</label> <br>
+        <input type="radio" id="q5a4" name="q5" value="0"><label for="q2a1">2</label> <br>
+        <input type="radio" id="q5a5" name="q5" value="0"><label for="q2a2">4</label> <br>
+      </div>
+    </div>
+  
+    <button class="main" onclick="checkAnswers()">Перевірити</button>
+    <button class="next" onclick="nextQuestion()">Наступне питання</button>
+    <button class="again" id="again" onclick="tryAgain()">Спробувати знову</button>
+    <div id="result"></div>
+  </div>
+
+  <script src="script.js">
+    
+  </script>
+</body>
+</html>

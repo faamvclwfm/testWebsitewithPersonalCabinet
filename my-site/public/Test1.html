@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Інтерактивний Тест</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a href="alltests.html" class="allTests">До усіх тестів</a>
+  <div class="mainSection">
+
+    <div class="nav" id="taskNav"></div>
+  
+    <div id="questions">
+      <div class="question active">
+        <p>1. Яке з наведених чисел ділиться націло на 2?</p>
+        <input type="radio" id="q1a1" name="q1" value="0"><label for="q1a1">831</label> <br>
+        <input type="radio" id="q1a2" name="q1" value="0"><label for="q1a3">745</label> <br>
+        <input type="radio" id="q1a3" name="q1" value="1"><label for="q1a3">654</label> <br>
+        <input type="radio" id="q1a4" name="q1" value="0"><label for="q1a1">567</label> <br>
+        <input type="radio" id="q1a5" name="q1" value="0"><label for="q1a3">493</label> <br>
+      </div>
+  
+      <div class="question">
+        <p>2. Яке з наведених чисел ділиться націло на 5?</p>
+        <input type="radio" id="q2a1" name="q2" value="1"><label for="q2a1">375</label> <br>
+        <input type="radio" id="q2a2" name="q2" value="0"><label for="q2a2">462</lab4l> <br>
+        <input type="radio" id="q2a3" name="q2" value="0"><label for="q2a3">549</label> <br>
+        <input type="radio" id="q2a4" name="q2" value="0"><label for="q2a1">621</label> <br>
+        <input type="radio" id="q2a5" name="q2" value="0"><label for="q2a2">708</label> <br>
+      </div>
+  
+      <div class="question">
+        <p>3. Яку цифру потрібно поставити замість зірочки у записі числа 53*2, щоб це число ділилося націло на 9?</p>
+        <input type="radio" id="q3a1" name="q3" value="0"><label for="q3a1">3</label> <br>
+        <input type="radio" id="q3a2" name="q3" value="1"><label for="q3a2">8</label> <br>
+        <input type="radio" id="q3a3" name="q3" value="0"><label for="q3a3">7</label> <br>
+        <input type="radio" id="q3a4" name="q3" value="0"><label for="q3a1">6</label> <br>
+        <input type="radio" id="q3a5" name="q3" value="0"><label for="q3a2">5</label> <br>
+      </div>
+      <div class="question">
+        <p>4. Яке з наведених чисел ОДНОЧАСНО ділиться націло на 2 і на 3?</p>
+        <input type="radio" id="q4a1" name="q4" value="0"><label for="q3a1">842</label> <br>
+        <input type="radio" id="q4a2" name="q4" value="0"><label for="q3a2">907</label> <br>
+        <input type="radio" id="q4a3" name="q4" value="0"><label for="q3a3">873</label> <br>
+        <input type="radio" id="q4a4" name="q4" value="1"><label for="q3a1">906</label> <br>
+        <input type="radio" id="q4a5" name="q4" value="0"><label for="q3a2">945</label> <br>
+      </div>
+      <div class="question">
+        <p>5. Яке з наведених чисел ділиться націло на 10?</p>
+        <input type="radio" id="q5a1" name="q5" value="1"><label for="q2a1">3750</label> <br>
+        <input type="radio" id="q5a2" name="q5" value="0"><label for="q2a2">4621</lab4l> <br>
+        <input type="radio" id="q5a3" name="q5" value="0"><label for="q2a3">3493</label> <br>
+        <input type="radio" id="q5a4" name="q5" value="0"><label for="q2a1">6219</label> <br>
+        <input type="radio" id="q5a5" name="q5" value="0"><label for="q2a2">7058</label> <br>
+      </div>
+    </div>
+  
+    <button class="main" onclick="checkAnswers()">Перевірити</button>
+    <button class="next" onclick="nextQuestion()">Наступне питання</button>
+    <button class="again" id="again" onclick="tryAgain()">Спробувати знову</button>
+    <div id="result"></div>
+  </div>
+
+  <script src="script.js">
+    
+  </script>
+</body>
+</html>
