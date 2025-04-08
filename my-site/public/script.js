@@ -57,6 +57,7 @@ let currentQuestion = 0;
           radio.disabled = true;
         });
         document.getElementById('result').textContent = `Ваш результат: ${score} з ${questions.length}`;
+        markTestAsComplete()
       })}
     
 
@@ -98,4 +99,19 @@ let currentQuestion = 0;
       showQuestion(0);
       document.getElementById('result').textContent = '';
       document.getElementById('again').style.display = 'none';
+    }
+    function markTestAsComplete(userId, testId) {
+      fetch('/api/complete-test', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ userId, testId })
+      })
+      .then(res => res.json())
+      .then(data => {
+        if (data.success) {
+          console.log("Test marked as completed!");
+        }
+      });
     }

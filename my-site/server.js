@@ -4,11 +4,21 @@ const bcrypt = require('bcryptjs');
 const db = require('./db');
 const path = require('path');
 
+
 const app = express();
 const PORT = 3000;
+app.use(express.json());
 
 // Middleware
 app.use(express.urlencoded({ extended: true }));
+app.post('/api/complete-test', (req, res) => {
+  const { userId, testId } = req.body;
+  if (!userId || !testId) return res.status(400).send('Missing data');
+
+  db.saveUserTest(userId, testId);
+  res.send({ success: true });
+});
+
 app.use(express.static('public'));
 app.use(session({
   secret: 'supersecretkey',
@@ -35,7 +45,7 @@ app.post('/login', (req, res) => {
         return res.send('Invalid login.');
       }
       req.session.userId = user.id;
-      res.redirect('/index.html'); // ⬅ redirect to main page after login
+      res.redirect('/index.html'); // ⬅ redirect to main page after logi
     });
   });
   
@@ -71,3 +81,34 @@ app.get('/logout', (req, res) => {
       res.redirect('/index.html');
     });
   });
+
+
+  const app1 = express();
+  
+  app1.use(express.json());
+  
+  app1.post('/api/complete-test', (req, res) => {
+    const { userId, testId } = req.body;
+    if (!userId || !testId) return res.status(400).send('Missing data');
+  
+    db.saveUserTest(userId, testId);
+    res.send({ success: true });
+  });
+
+
+  
+  // Save completed test
+  app.post('/api/complete-test', (req, res) => {
+    const { userId, testId } = req.body;
+    if (!userId || !testId) return res.status(400).send('Missing data');
+  
+    db.saveUserTest(userId, testId);
+    res.send({ success: true });
+  });
+  app.get('/api/user-tests/:userId', (req, res) => {
+    const userId = req.params.userId;
+    const tests = db.getUserTests(userId);
+    res.json(tests);
+  });
+  
+
