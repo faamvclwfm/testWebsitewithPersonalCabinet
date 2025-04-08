@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    text-decoration-line: none;
+    color: inherit;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f5f9;
+    padding: 20px;
+  }
+.allTestSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 70%;
+    background-color: white;
+    border-radius: 10px;
+    height: auto;
+    padding: 50px;
+}
+.test{
+    display: flex;
+    justify-content: space-between;
+    background-color: #c5c1f2;
+    padding: 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    color: black;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.test a{
+    padding: 10px 30px;
+    font-size: 16px;
+    border: none;
+    border-radius: 20px;
+    background-color: white;
+    cursor: pointer;
+    text-decoration-line: none;
+    transition: all 0.2s ease;
+}
+.test a:hover{
+    background-color: #8077e2;
+    color: white;
+}

@@ -1,0 +1,171 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f5f9;
+    padding: 20px;
+  }
+  .nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-bottom: 20px;
+  }
+  .nav button {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    border: 0.5px solid #ccc;
+    
+    font-weight: bold;
+    background-color: white; 
+    cursor: pointer;
+  }
+  .nav button.active {
+    background-color: #3b82f6; 
+    color: white;
+  }
+  .nav button.correct {
+    background-color: #10b981 !important; 
+    color: white;
+  }
+  .nav button.incorrect {
+    background-color: #ef4444 !important; 
+    color: white;
+  }
+  .question {
+    margin-bottom: 20px;
+    padding: 15px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    display: none;
+  }
+  .question.active {
+    display: block;
+  }
+  button.main {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3b82f6;
+    color: white;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  #result {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  button.next {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f67d3b;
+    color: white;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  button.again {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f6513b;
+    color: white;
+    cursor: pointer;
+    display: none;
+    margin-left: 89.5%;
+    box-sizing: border-box;
+    margin-top: 0px;
+  }
+  /*
+.statc-answer{
+  color: black;
+  font-weight: normal;
+}
+  */
+.correct-answer {
+  color: #10b981;
+  font-weight: bold;
+}
+
+.incorrect-answer {
+  color: #ef4444;
+  font-weight: bold;
+}
+.mainSection{
+  justify-content: center;
+  width: 70%;
+  margin: 0 auto;
+}
+.allTests{
+  padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #9a92ed;
+    color: white;
+    cursor: pointer;
+    float: right;
+    box-sizing: border-box;
+    margin-top: 0px;
+    text-decoration-line: none;
+}
+input[type='radio']{
+  margin-bottom: 21px;
+}
+.loginButton{
+  padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #9a92ed;
+    color: white;
+    cursor: pointer;
+    box-sizing: border-box;
+    width: 150px;
+    margin: 0 auto;
+    text-decoration-line: none;
+    margin-bottom: 10px;
+}
+.signUpButton{
+  padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #edd292;
+    color: white;
+    cursor: pointer;
+    box-sizing: border-box;
+    width: 150px;
+    margin: 0 auto;
+    text-decoration-line: none;
+    margin-bottom: 10px;
+}
+.mainSectionGreeting{
+  margin: 15vh auto;
+    border-radius: 20px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    width: 900px;
+    height: 600px;
+    padding: 30px;
+}
+.mainSectionGreeting p{
+  margin-bottom: 60px;
+}
+.mainSectionGreeting h1{
+  margin-bottom: 5px;
+
+}
+.buttonSection{
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
