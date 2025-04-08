@@ -144,3 +144,28 @@ input[type='radio']{
     text-decoration-line: none;
     margin-bottom: 10px;
 }
+.mainSectionGreeting{
+  margin: 15vh auto;
+    border-radius: 20px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    width: 900px;
+    height: 600px;
+    padding: 30px;
+}
+.mainSectionGreeting p{
+  margin-bottom: 60px;
+}
+.mainSectionGreeting h1{
+  margin-bottom: 5px;
+
+}
+.buttonSection{
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
