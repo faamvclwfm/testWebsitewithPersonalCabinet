@@ -31,7 +31,7 @@ app.post('/signup', async (req, res) => {
   const { username, password } = req.body;
   const hash = await bcrypt.hash(password, 10);
 
-  db.run(`INSERT INTO users (username, password) VALUES (?, ?)`, [username, hash], function (err) {
+  db.db.run(`INSERT INTO users (username, password) VALUES (?, ?)`, [username, hash], function (err) {
     if (err) {
       return res.send('Username already exists.');
     }
@@ -40,7 +40,7 @@ app.post('/signup', async (req, res) => {
 app.post('/login', (req, res) => {
     const { username, password } = req.body;
   
-    db.get(`SELECT * FROM users WHERE username = ?`, [username], async (err, user) => {
+  db.db.get(`SELECT * FROM users WHERE username = ?`, [username], async (err, user) => {
       if (!user || !(await bcrypt.compare(password, user.password))) {
         return res.send('Invalid login.');
       }
@@ -56,7 +56,7 @@ app.post('/login', (req, res) => {
 app.post('/login', (req, res) => {
   const { username, password } = req.body;
 
-  db.get(`SELECT * FROM users WHERE username = ?`, [username], async (err, user) => {
+  db.db.get(`SELECT * FROM users WHERE username = ?`, [username], async (err, user) => {
     if (!user || !(await bcrypt.compare(password, user.password))) {
       return res.send('Invalid login.');
     }
